@@ -20,6 +20,8 @@ header {
 .logoMind {
   width: 80px;
   padding: 10px;
+  transition-property: all;
+  transition-duration: 200ms;
 }
 
 .flex-container {
@@ -86,6 +88,15 @@ h2 {
   border: 8px solid #1b1b1c;
   margin-top: 25px;
   margin-left: 20px;
+  transition-property: all;
+  transition-duration: 200ms;
+}
+
+.ani:hover{
+  transform: scale(1.2);
+}
+.ani2:hover{
+transform:scale(1.1); 
 }
 
 .grid {
@@ -116,6 +127,8 @@ iframe {
   height: 380px;
   padding-left: 25px;
   margin-top: 25px;
+  transition-property: all;
+  transition-duration: 150ms;
 }
 
 strong {
@@ -231,6 +244,8 @@ textarea {
   margin-left: 20px;
   font-family: 'Ubuntu', sans-serif;
   width: 237px;
+  transition-property: all;
+  transition-duration: 200ms;
 }
 
 .submit {
