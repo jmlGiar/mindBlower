@@ -6,12 +6,17 @@
 }
 
 body {
-  background-color: #232324;  
+  background-color: #232324;
   font-family: 'Ubuntu', sans-serif;
+  min-height: 100vh;
 }
 
 .backgroundC {
   background-color: #232324;
+}
+
+.active {
+  color: rgb(170, 0, 255) !important;
 }
 
 header {
@@ -32,7 +37,7 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /* puede usarse flex-flow para abreviar flex-direction y flex-wrap*/
+  /* puede usarse flex-flow para abreviar flex-direction y flex-wrap */
   align-items: center;
   justify-content: space-evenly;
 }
@@ -41,10 +46,12 @@ ul li {
   font-size: 35px;
   list-style-type: none;
   display: inline-block;
+  transition-property: all;
+  transition-duration: 200ms;
 }
 
 a {
-  color: rgb(191, 68, 253);
+  color: rgb(191, 68, 253) !important;
   text-decoration: none;
 }
 
@@ -86,28 +93,34 @@ h2 {
   margin-top: 20px;
 }
 
-.logos {
-  height: 256px;
-  width: 1fr;
-  border: 8px solid #1b1b1c;
-  margin-top: 25px;
-  margin-left: 20px;
-  transition-property: all;
-  transition-duration: 200ms;
-}
-
-.ani:hover{
+.ani:hover {
   transform: scale(1.2);
 }
-.ani2:hover{
-transform:scale(1.1); 
+
+.ani2:hover {
+  transform: scale(1.1);
+}
+
+.ani3:hover {
+  transform: scale(1.05);
+}
+
+.logos {
+  height: 14vw;
+  border: 8px solid #1b1b1c;
+  margin-top: 25px;
+  transition-property: all;
+  transition-duration: 200ms;
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr;
   justify-items: center;
+  margin-bottom: 34px;
 }
+
 .grid2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -119,7 +132,7 @@ transform:scale(1.1);
   text-align: center;
 }
 
-.other{
+.other {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -254,4 +267,341 @@ textarea {
 
 .submit {
   margin-left: 20px;
+}
+
+@media (min-width:320px) {
+  ul li {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 25px;
+    text-align: center;
+    padding-right: 15px;
+  }
+
+  .pPrincipal {
+    font-size: 15px;
+  }
+
+  h2 {
+    font-size: 25px;
+    text-align: center;
+    padding-right: 25px;
+  }
+
+  .djsong {
+    font-size: 25px;
+    text-align: center;
+    padding-right: 20px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  iframe {
+    width: 99vw;
+    height: 300px;
+    padding-left: 25px;
+    transition-property: none;
+  }
+
+  footer {
+    text-align: center;
+    padding-top: 5px;
+    margin-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .djsong {
+    font-size: 20px;
+    background-color: #1d1d1d;
+    padding-left: 20px;
+    margin-top: 20px;
+  }
+
+  h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .pionimg {
+    height: 156px;
+    width: 300px;
+    float: none;
+    padding-top: 5px;
+    padding-left: 20px;
+  }
+
+  .tbt {
+    width: 280px;
+    height: 190px;
+    float: none;
+    padding-left: 0px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .detroit {
+    height: 184px;
+    width: 300px;
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-top: 25px;
+    margin-left: 20px;
+  }
+
+  .abc {
+    font-size: 15px;
+    padding-left: 0px;
+  }
+
+  label {
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+
+  input {
+    margin-left: 20px;
+  }
+
+  textarea {
+    width: 280px;
+    height: 160px;
+    margin-top: 15px;
+    margin-left: 20px;
+  }
+
+  .final {
+    width: 280px;
+  }
+
+  .checkbox {
+    position: relative;
+  }
+
+  .logos {
+    height: 40vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    margin-bottom: 34px;
+  }
+
+  .grid2 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+  }
+
+  .prin {
+    height: 50vw;
+  }
+
+  .easter:link {
+    color: rgb(191, 68, 253);
+  }
+
+  .easter:visited {
+    color: rgb(191, 68, 253);
+  }
+}
+
+@media (min-width: 768px) {
+  ul li {
+    font-size: 30px;
+  }
+
+  .pPrincipal {
+    font-size: 20px;
+  }
+
+  .djsong {
+    font-size: 35px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  iframe {
+    width: 99vw;
+    height: 300px;
+    padding-left: 25px;
+    transition-property: none;
+  }
+
+  h3 {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .tbt {
+    width: 280px;
+    height: 190px;
+    float: right;
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .pionimg {
+    float: left;
+    padding-top: 15px;
+    padding-right: 15px;
+  }
+
+  .abc {
+    font-size: 20px;
+    padding-left: 0px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  label {
+    font-size: 20px;
+  }
+
+  textarea {
+    width: 95vw;
+    height: 160px;
+    margin-top: 15px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .final {
+    width: 95vw;
+  }
+
+  footer {
+    margin-top: 20px;
+  }
+
+  .logos {
+    height: 30vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    margin-bottom: 34px;
+  }
+
+  .grid2 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+  }
+
+  .easter:link {
+    color: rgb(191, 68, 253);
+  }
+
+  .easter:visited {
+    color: rgb(191, 68, 253);
+  }
+}
+
+@media (min-width: 1680px) {
+  ul li {
+    font-size: 40px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .pPrincipal {
+    font-size: 21px;
+  }
+
+  h2 {
+    font-size: 40px;
+    text-align: start;
+    padding-right: 25px;
+  }
+
+  .djsong {
+    font-size: 40px;
+    text-align: start;
+  }
+
+  p {
+    font-size: 21px;
+  }
+
+  iframe {
+    width: 99vw;
+    height: 300px;
+    padding-left: 25px;
+    padding-right: 25px;
+    transition-property: all;
+    transition-duration: 150ms;
+  }
+
+  .logos {
+    height: 15vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    margin-bottom: 34px;
+  }
+
+  .grid2 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+  }
+
+  .abc {
+    font-size: 21px;
+  }
+
+  .tbt {
+    width: 380px;
+    height: 230px;
+  }
+
+  .pionimg {
+    height: 200px;
+    width: 370px;
+  }
+
+  .detroit {
+    height: 230px;
+    width: 380px;
+  }
+
+  textarea {
+    width: 50vw;
+  }
+
+  .final {
+    width: 50vw;
+  }
+
+  footer {
+    font-size: 21px;
+  }
+
+  .easter:link {
+    color: rgb(191, 68, 253);
+  }
+
+  .easter:visited {
+    color: rgb(191, 68, 253);
+  }
 }
