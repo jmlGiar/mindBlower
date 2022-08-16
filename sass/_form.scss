@@ -1,0 +1,52 @@
+label {
+  color: whitesmoke;
+  font-size: 21px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+div {
+  color: whitesmoke;
+  font-size: 21px;
+}
+
+.ifyou {
+  color: whitesmoke;
+  text-align: justify;
+}
+
+input {
+  background-color: darkorchid;
+  border-color: darkorchid;
+}
+
+textarea {
+  color: white;
+  background-color: darkorchid;
+  border-color: darkorchid;
+  font-family: 'Ubuntu', sans-serif;
+  width: 494px;
+  height: 160px;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+::placeholder {
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.final {
+  color: white;
+  padding: 2px;
+  margin-top: 8px;
+  margin-left: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  width: 237px;
+  transition-property: all;
+  transition-duration: 200ms;
+}
+
+.submit {
+  margin-left: 20px;
+}
