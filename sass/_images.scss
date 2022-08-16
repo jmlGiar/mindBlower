@@ -1,0 +1,74 @@
+.logos {
+    height: 14vw;
+    border: 8px solid #1b1b1c;
+    margin-top: 25px;
+    transition-property: all;
+    transition-duration: 200ms;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+    margin-bottom: 34px;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    text-align: center;
+}
+
+.ani:hover {
+    transform: scale(1.2);
+}
+
+.ani2:hover {
+    transform: scale(1.1);
+}
+
+.ani3:hover {
+    transform: scale(1.05);
+}
+
+iframe {
+    width: 380px;
+    height: 380px;
+    padding-left: 25px;
+    margin-top: 25px;
+    transition-property: all;
+    transition-duration: 150ms;
+}
+
+.other {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.detroit {
+    height: 200px;
+    width: 380px;
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.tbt {
+    float: right;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.pionimg {
+    height: 156px;
+    width: 300px;
+    float: right;
+    padding-top: 5px;
+    padding-left: 20px;
+}

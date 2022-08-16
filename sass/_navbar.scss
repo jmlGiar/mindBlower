@@ -1,0 +1,43 @@
+.backgroundC {
+  background-color: #232324;
+}
+
+.active {
+  color: rgb(170, 0, 255) !important;
+}
+
+header {
+  background-color: #1b1b1c;
+  padding: 8px;
+  font-family: 'Ubuntu', sans-serif;
+  text-transform: uppercase;
+}
+
+.logoMind {
+  width: 80px;
+  padding: 10px;
+  transition-property: all;
+  transition-duration: 200ms;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* puede usarse flex-flow para abreviar flex-direction y flex-wrap */
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+ul li {
+  font-size: 35px;
+  list-style-type: none;
+  display: inline-block;
+  transition-property: all;
+  transition-duration: 200ms;
+
+  a {
+    color: rgb(191, 68, 253) !important;
+    text-decoration: none;
+  }
+}
