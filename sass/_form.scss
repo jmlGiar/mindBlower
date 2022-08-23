@@ -1,3 +1,31 @@
+@mixin boxmodel($padding, $margin) {
+  padding-right: $padding;
+  padding-left: $padding;
+  margin-left: $margin;
+}
+
+.socialmedia {
+  @extend .abc;
+
+  .btn--twitter {
+    padding-right: 5px;
+    padding-left: 5px;
+    margin: 0px 0px 5px 20px;
+  }
+
+  .btn--instagram {
+    @include boxmodel (5px, 5px)
+  }
+
+  .btn--facebook {
+    @include boxmodel (5px, 5px)
+  }
+
+  .btn--spotify {
+    @include boxmodel (5px, 5px)
+  }
+}
+
 label {
   color: whitesmoke;
   font-size: 21px;

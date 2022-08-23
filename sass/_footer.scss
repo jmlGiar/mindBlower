@@ -11,3 +11,15 @@ footer {
   font-size: 15px;
   text-align: center;
 }
+
+picture {
+  display: grid;
+  grid-template-columns: repeat(4, 50px);
+  grid-template-rows: 1fr;
+  justify-content: center;
+}
+
+.sociales {
+  height: 32px;
+  margin: 10px;
+}

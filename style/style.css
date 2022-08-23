@@ -20,7 +20,7 @@ span {
   text-align: justify;
 }
 
-.abc {
+.abc, .socialmedia {
   font-size: 21px;
   color: whitesmoke;
   text-align: justify;
@@ -214,6 +214,39 @@ footer {
   text-align: center;
 }
 
+picture {
+  display: grid;
+  grid-template-columns: repeat(4, 50px);
+  grid-template-rows: 1fr;
+  justify-content: center;
+}
+
+.sociales {
+  height: 32px;
+  margin: 10px;
+}
+
+.socialmedia .btn--twitter {
+  padding-right: 5px;
+  padding-left: 5px;
+  margin: 0px 0px 5px 20px;
+}
+.socialmedia .btn--instagram {
+  padding-right: 5px;
+  padding-left: 5px;
+  margin-left: 5px;
+}
+.socialmedia .btn--facebook {
+  padding-right: 5px;
+  padding-left: 5px;
+  margin-left: 5px;
+}
+.socialmedia .btn--spotify {
+  padding-right: 5px;
+  padding-left: 5px;
+  margin-left: 5px;
+}
+
 label {
   color: whitesmoke;
   font-size: 21px;
@@ -275,6 +308,22 @@ textarea {
 
 .submit {
   margin-left: 20px;
+}
+
+.btn--twitter {
+  background-color: #2d88ff;
+}
+
+.btn--instagram {
+  background-color: #ff4646;
+}
+
+.btn--facebook {
+  background-color: #0000ff;
+}
+
+.btn--spotify {
+  background-color: #008000;
 }
 
 @media (min-width: 320px) {
@@ -348,7 +397,7 @@ textarea {
     margin-top: 25px;
     margin-left: 20px;
   }
-  .abc {
+  .abc, .socialmedia {
     font-size: 15px;
     padding-left: 0px;
   }
@@ -432,7 +481,7 @@ textarea {
     padding-top: 15px;
     padding-right: 15px;
   }
-  .abc {
+  .abc, .socialmedia {
     font-size: 20px;
     padding-left: 0px;
   }
@@ -520,7 +569,7 @@ textarea {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
   }
-  .abc {
+  .abc, .socialmedia {
     font-size: 21px;
   }
   .tbt {

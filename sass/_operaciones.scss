@@ -1,0 +1,13 @@
+$socialmedia: (
+    twitter: #2d88ff,
+    instagram: #ff4646,
+    facebook: #0000ff,
+    spotify: #008000,
+);
+
+@each $media,
+$color in $socialmedia {
+    .btn--#{$media} {
+        background-color: $color;
+    }
+}
