@@ -21,6 +21,10 @@ h2 {
   padding-left: 25px;
 }
 
+.aviso {
+  @extend h1;
+}
+
 h3 {
   color: rgb(191, 68, 253);
   font-size: 40px;
